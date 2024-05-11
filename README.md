@@ -26,4 +26,4 @@ The Medallion Architecture is a data processing framework designed to ensure sca
 
 ### Getting Started
 
-To get started with the data pipeline, follow the steps mentioned in the Procedure.txt. Feel free to make modifications in the data flow structure while creating your own pipeline. 
+To get started with the data pipeline, follow the steps mentioned in the Procedure.txt file. Feel free to make modifications in the data flow structure while creating your own pipeline. 
