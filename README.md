@@ -8,7 +8,7 @@ This project implements a data pipeline based on the Medallion Architecture, lev
 
 ### Architecture
 
-The Medallion Architecture is a data processing framework designed to ensure scalability, reliability, and maintainability of data pipelines. Our implementation utilizes the following components:
+The Medallion Architecture is a data processing framework designed to ensure scalability, reliability and maintainability of data pipelines. Our implementation utilizes the following components:
 
 1. Azure Data Factory: Orchestrates and automates data movement and transformation workflows. It provides a visual interface for constructing, monitoring, and managing pipelines.
 
