@@ -24,7 +24,7 @@ The Medallion Architecture is a data processing framework designed to ensure sca
    
 2. Scalability: Leveraging Azure services ensures scalability to handle large volumes of data & varying workloads.
    
-3. Automated Workflow: Data movement, transformation, and orchestration are automated, reducing manual intervention and potential errors.
+3. Automated Workflow: Data movement, transformation and orchestration are automated, reducing manual intervention and potential errors.
  
 4. Version Control: DBT enables version control of data transformation logic, promoting collaboration and ensuring reproducibility.
 
