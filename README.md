@@ -4,7 +4,7 @@
 
 ### Overview
 
-This project implements a data pipeline based on the Medallion Architecture, leveraging Microsoft Azure services including Azure Data Factory, Azure Databricks, and DBT (Data Build Tool). The pipeline facilitates the efficient extraction, transformation and loading (ETL) of data, enabling seamless data processing & analysis.
+This project implements a data pipeline based on the Medallion Architecture, leveraging Microsoft Azure services including Azure Data Factory, Azure Databricks and DBT (Data Build Tool). The pipeline facilitates the efficient extraction, transformation and loading (ETL) of data, enabling seamless data processing & analysis.
 
 ### Architecture
 
