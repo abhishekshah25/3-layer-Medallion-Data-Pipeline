@@ -29,11 +29,9 @@ fileName = dbutils.widgets.get('fileName')
 tableSchema = dbutils.widgets.get('table_schema')
 tableName = dbutils.widgets.get('table_name')
 
-
-# Create database if not exists
 spark.sql(f'CREATE DATABASE IF NOT EXISTS {tableSchema}') 
 
-# Create table if not exists
+
 spark.sql(""" 
         CREATE TABLE IF NOT EXISTS """+tableSchema+"""."""+tableName+"""
         USING PARQUET LOCATION '/mnt/bronze/"""+fileName+"""/"""+tableSchema+"""."""+tableName+""".parquet'
