@@ -19,7 +19,6 @@ dbutils.fs.mount(
     extra_configs = {'fs.azure.account.key.medalliondbtstorage.blob.core.windows.net': dbutils.secrets.get('databricksScope','storageAccountKey')}
 )
 
-# List of files
 dbutils.fs.ls('/mnt/bronze')
 dbutils.fs.ls('/mnt/silver')
 dbutils.fs.ls('/mnt/gold')
