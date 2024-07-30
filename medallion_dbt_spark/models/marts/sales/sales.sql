@@ -61,7 +61,6 @@ saleorderheader_snapshot as (
         row_number() over (partition by SalesOrderID order by SalesOrderID) as row_num
     FROM {{ source('saleslt', 'salesorderheader') }}
 ),
-
 transformed as (
     select
         sod.SalesOrderID,
@@ -107,4 +106,4 @@ transformed as (
     left join saleorderheader_snapshot soh on sod.SalesOrderID = soh.SalesOrderID
 )
 
-select * from transformed
+select * from transformed;
