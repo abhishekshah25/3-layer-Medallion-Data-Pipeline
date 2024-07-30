@@ -33,7 +33,6 @@ product_model_snapshot as (
     where dbt_valid_to is null
 ),
 
-
 transformed as (
     select
         row_number() over (order by p.productId) as product_sk,
@@ -51,4 +50,4 @@ transformed as (
     left join product_model_snapshot pm on p.productmodelid = pm.productmodelid
 )
 
-select * from transformed
+select * from transformed;
