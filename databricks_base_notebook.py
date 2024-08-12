@@ -1,18 +1,18 @@
-# Bronze Layer
+# Bronze 
 dbutils.fs.mount(
     source = 'wasbs://bronze@medalliondbtstorage.blob.core.windows.net',
     mount_point = '/mnt/bronze',
     extra_configs = {'fs.azure.account.key.medalliondbtstorage.blob.core.windows.net': dbutils.secrets.get('databricksScope','storageAccountKey')}
 )
 
-# Silver Layer
+# Silver
 dbutils.fs.mount(
     source = 'wasbs://silver@medalliondbtstorage.blob.core.windows.net',
     mount_point = '/mnt/silver',
     extra_configs = {'fs.azure.account.key.medalliondbtstorage.blob.core.windows.net': dbutils.secrets.get('databricksScope','storageAccountKey')}
 )
 
-# Gold Layer
+# Gold 
 dbutils.fs.mount(
     source = 'wasbs://gold@medalliondbtstorage.blob.core.windows.net',
     mount_point = '/mnt/gold',
@@ -29,7 +29,6 @@ tableSchema = dbutils.widgets.get('table_schema')
 tableName = dbutils.widgets.get('table_name')
 
 spark.sql(f'CREATE DATABASE IF NOT EXISTS {tableSchema}') 
-
 
 spark.sql(""" 
         CREATE TABLE IF NOT EXISTS """+tableSchema+"""."""+tableName+"""
