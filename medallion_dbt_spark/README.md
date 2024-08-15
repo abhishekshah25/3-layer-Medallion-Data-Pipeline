@@ -1,4 +1,5 @@
-Try running the following commands:
+Try running the following commands for the environment setup:
+
 - dbt run
 - dbt test
 - dbt docs generate
