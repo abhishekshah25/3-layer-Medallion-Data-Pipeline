@@ -17,7 +17,6 @@ with address_snapshot as (
         PostalCode
     from {{ ref('address_snapshot') }} where dbt_valid_to is null
 )
-
 , customeraddress_snapshot as (
     select
         CustomerId,
@@ -25,14 +24,12 @@ with address_snapshot as (
         AddressType
     from {{ref('customeraddress_snapshot')}} where dbt_valid_to is null
 )
-
 , customer_snapshot as (
     select
         CustomerId,
         concat(ifnull(FirstName,' '),' ',ifnull(MiddleName,' '),' ',ifnull(LastName,' ')) as FullName
     from {{ref('customer_snapshot')}} where dbt_valid_to is null
 )
-
 , transformed as (
     select
     row_number() over (order by customer_snapshot.customerid) as customer_sk, -- auto-incremental surrogate key
@@ -49,5 +46,5 @@ with address_snapshot as (
     inner join customeraddress_snapshot on customer_snapshot.CustomerId = customeraddress_snapshot.CustomerId
     inner join address_snapshot on customeraddress_snapshot.AddressID = address_snapshot.AddressID
 )
-select *
-from transformed
+    
+select * from transformed;
