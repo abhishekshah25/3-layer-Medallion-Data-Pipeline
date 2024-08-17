@@ -10,7 +10,7 @@ This project implements a data pipeline based on the Medallion Architecture, lev
 
 The Medallion Architecture is a data processing framework designed to ensure scalability, reliability and maintainability of data pipelines. Our implementation utilizes the following components:
 
-1. Azure Data Factory: Orchestrates and automates data movement and transformation workflows. It provides a visual interface for constructing, monitoring and managing pipelines.
+1. Azure Data Factory: Orchestrates and automates data movement and transformation workflows. It provides a visual interface for constructing, monitoring & managing pipelines.
 
 2. Azure Databricks: A unified analytics platform that integrates with Azure services for big data processing. Databricks clusters enable scalable data processing using Apache Spark and it's notebooks facilitate collaborative development and execution of data transformation logic.
 
