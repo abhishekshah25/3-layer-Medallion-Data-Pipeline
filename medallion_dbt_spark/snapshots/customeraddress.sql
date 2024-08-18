@@ -19,7 +19,6 @@ with source_data as (
         AddressType
     from {{ source('saleslt', 'customeraddress') }}
 )
-select *
-from source_data
+select * from source_data;
 
 {% endsnapshot %}
