@@ -29,7 +29,6 @@ with source_data as (
         PasswordSalt
     from {{ source('saleslt', 'customer') }}
 )
-select *
-from source_data
+select * from source_data;
 
 {% endsnapshot %}
