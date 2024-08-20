@@ -32,6 +32,6 @@ with product_snapshot as (
     FROM {{ source('saleslt', 'product') }}
 )
 
-select * from product_snapshot
+select * from product_snapshot;
 
 {% endsnapshot %}
