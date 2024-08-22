@@ -23,7 +23,6 @@ with source_data as (
         PostalCode
     from {{ source('saleslt', 'address') }}
 )
-select *
-from source_data
+select * from source_data;
 
 {% endsnapshot %}
