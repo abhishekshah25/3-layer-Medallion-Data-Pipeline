@@ -20,6 +20,6 @@ with product_snapshot as (
     FROM {{ source('saleslt', 'productmodel') }}
 )
 
-select * from product_snapshot
+select * from product_snapshot;
 
 {% endsnapshot %}
