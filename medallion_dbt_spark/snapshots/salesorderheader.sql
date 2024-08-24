@@ -37,6 +37,6 @@ with salesorderheader_snapshot as (
     FROM {{ source('saleslt', 'salesorderheader') }}
 )
 
-select * from salesorderheader_snapshot
+select * from salesorderheader_snapshot;
 
 {% endsnapshot %}
