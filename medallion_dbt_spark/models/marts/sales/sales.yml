@@ -65,7 +65,7 @@ models:
       - name: thumbNailPhoto
         description: The thumbnail photo of the product
       - name: thumbnailPhotoFileName
-        description: The thumbnail photo file name of the product
+        description: The thumbnail photo file of the product
       - name: revisionNumber
         description: The revision number of the sale order
       - name: orderDate
