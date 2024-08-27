@@ -1,18 +1,18 @@
-# Bronze 
+# Bronze Layer
 dbutils.fs.mount(
     source = 'wasbs://bronze@medalliondbtstorage.blob.core.windows.net',
     mount_point = '/mnt/bronze',
     extra_configs = {'fs.azure.account.key.medalliondbtstorage.blob.core.windows.net': dbutils.secrets.get('databricksScope','storageAccountKey')}
 )
 
-# Silver
+# Silver Layer
 dbutils.fs.mount(
     source = 'wasbs://silver@medalliondbtstorage.blob.core.windows.net',
     mount_point = '/mnt/silver',
     extra_configs = {'fs.azure.account.key.medalliondbtstorage.blob.core.windows.net': dbutils.secrets.get('databricksScope','storageAccountKey')}
 )
 
-# Gold 
+# Gold Layer
 dbutils.fs.mount(
     source = 'wasbs://gold@medalliondbtstorage.blob.core.windows.net',
     mount_point = '/mnt/gold',
