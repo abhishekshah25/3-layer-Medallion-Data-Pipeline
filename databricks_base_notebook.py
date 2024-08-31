@@ -30,7 +30,8 @@ tableName = dbutils.widgets.get('table_name')
 
 spark.sql(f'CREATE DATABASE IF NOT EXISTS {tableSchema}') 
 
-spark.sql(""" 
+spark.sql
+(""" 
         CREATE TABLE IF NOT EXISTS """+tableSchema+"""."""+tableName+"""
         USING PARQUET LOCATION '/mnt/bronze/"""+fileName+"""/"""+tableSchema+"""."""+tableName+""".parquet'
-""")
+ """)
