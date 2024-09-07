@@ -1,4 +1,4 @@
-Try running the following commands for the environment setup:
+Try running the following commands for the environment setup of dbt:
 
 - dbt run
 - dbt test
