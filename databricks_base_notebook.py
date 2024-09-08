@@ -20,7 +20,9 @@ dbutils.fs.mount(
 )
 
 dbutils.fs.ls('/mnt/bronze')
+
 dbutils.fs.ls('/mnt/silver')
+
 dbutils.fs.ls('/mnt/gold')
 
 
