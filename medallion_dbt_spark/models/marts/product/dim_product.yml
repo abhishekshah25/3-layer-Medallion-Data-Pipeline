@@ -14,7 +14,7 @@ models:
         tests:
           - not_null
       - name: standard_cost
-        description: The standard cost of the product
+        description: The cost of the product
       - name: list_price
         description: The list price of the product
       - name: size
