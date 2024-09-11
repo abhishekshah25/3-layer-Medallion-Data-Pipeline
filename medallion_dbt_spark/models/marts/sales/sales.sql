@@ -58,7 +58,7 @@ saleorderheader_snapshot as (
         Freight,
         TotalDue,
         Comment,
-        row_number() over (partition by SalesOrderID order by SalesOrderID) as row_num
+        Row_Number() over (partition by SalesOrderID order by SalesOrderID) as row_num
     FROM {{ source('saleslt', 'salesorderheader') }}
 ),
 transformed as (
