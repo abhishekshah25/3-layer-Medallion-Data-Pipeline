@@ -32,7 +32,7 @@ with address_snapshot as (
 )
 , transformed as (
     select
-    row_number() over (order by customer_snapshot.customerid) as customer_sk, -- auto-incremental surrogate key
+    Row_Number() over (order by customer_snapshot.customerid) as customer_sk, -- auto-incremental surrogate key
     customer_snapshot.CustomerId,
     customer_snapshot.fullname,
     customeraddress_snapshot.AddressID,
