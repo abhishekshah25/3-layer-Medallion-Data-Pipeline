@@ -28,7 +28,7 @@ product_model_snapshot as (
         productmodelid,
         name,
         CatalogDescription,
-        row_number() over (order by name) as model_id
+        Row_Number() over (order by name) as model_id
     from {{ ref("productmodel_snapshot") }}
     where dbt_valid_to is null
 ),
