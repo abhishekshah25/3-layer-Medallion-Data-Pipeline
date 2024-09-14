@@ -13,7 +13,7 @@ models:
         tests:
           - not_null
       - name: fullname
-        description: The customer name. Adopted as customer_fullname when person name is not null.
+        description: The customer name. Adopted as customer_fullname when the person name is not null.
       - name: AddressId
         tests:
           - not_null
