@@ -10,7 +10,7 @@ models:
           - unique
           - not_null
       - name: saleOrderDetailID
-        description: The surrogate key of the sale order detail
+        description: The surrogate key of the sales order detail
         tests:
           - unique
           - not_null
