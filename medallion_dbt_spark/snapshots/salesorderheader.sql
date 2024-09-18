@@ -4,15 +4,15 @@
     config(
       file_format = "delta",
       location_root = "/mnt/silver/salesorderheader",
-      target_schema='snapshots',
-      invalidate_hard_deletes=True,
-      unique_key='SalesOrderID',
-      strategy='check',
-      check_cols='all'
+      target_schema = 'snapshots',
+      invalidate_hard_deletes = True,
+      unique_key = 'SalesOrderID',
+      strategy = 'check',
+      check_cols = 'all'
     )
 }}
 
-with salesorderheader_snapshot as (
+With salesorderheader_snapshot as (
     SELECT
         SalesOrderID,
         RevisionNumber,
