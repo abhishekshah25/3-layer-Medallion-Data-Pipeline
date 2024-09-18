@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: saleslt
     schema: saleslt
-    description: This is the database loaded into the bronze layer
+    description: This is the database loaded into bronze layer
     tables:
       - name: address
       - name: customer
