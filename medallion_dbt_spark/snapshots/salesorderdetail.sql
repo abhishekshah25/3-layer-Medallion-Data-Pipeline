@@ -12,7 +12,7 @@
     )
 }}
 
-with salesorderdetail_snapshot as (
+With salesorderdetail_snapshot as (
     SELECT
         SalesOrderID,
         SalesOrderDetailID,
