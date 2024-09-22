@@ -12,7 +12,7 @@
     )
 }}
 
-with product_snapshot as (
+With product_snapshot as (
     SELECT
         ProductID,
         Name,
