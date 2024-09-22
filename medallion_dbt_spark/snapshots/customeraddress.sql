@@ -12,7 +12,7 @@
     )
 }}
 
-with source_data as (
+With source_data as (
     select
         CustomerId,
         AddressId,
