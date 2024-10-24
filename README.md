@@ -22,7 +22,7 @@ The Medallion Architecture is a data processing framework designed to ensure sca
 
 1. Modular Pipeline: The pipeline is modular, allowing easy addition or modification of data sources, transformations and destinations.
    
-2. Scalability: Leveraging Azure services ensures scalability to handle large volumes of data & varying workloads.
+2. Scalability: Leveraging Azure services ensures scalability to handle large volumes of data and varying workloads.
    
 3. Automated Workflow: Data movement, transformation and orchestration are automated, thereby reducing manual intervention & potential errors.
  
