@@ -1,4 +1,4 @@
-Run the following commands for the environment setup of dbt:
+Run the following commands for the setup of dbt:
 
 - dbt run
 - dbt test
