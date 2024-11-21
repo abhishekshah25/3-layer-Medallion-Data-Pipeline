@@ -12,9 +12,9 @@ The Medallion Architecture is a data processing framework designed to ensure sca
 
 1. Azure Data Factory: Orchestrates and automates data movement & transformation workflows. It provides a visual interface for constructing, monitoring and managing data pipelines.
 
-2. Azure Databricks: A unified analytics platform that integrates with Azure services for big data processing. Databricks clusters enable scalable data processing using Apache Spark & it's notebooks facilitate collaborative development & execution of data transformation logic.
+2. Azure Databricks: A unified analytics platform that integrates with Azure services for big data processing. Databricks clusters enable scalable data processing using Apache Spark and it's notebooks facilitate collaborative development and execution of data transformation logic.
 
-3. DBT (Data Build Tool): A command line tool that enables the transformation of data in your warehouse more effectively. It is specifically designed for those who want to build code that's modular, verifiable & optimized for change.
+3. DBT (Data Build Tool): A command line tool that enables the transformation of data in your warehouse more effectively. It is specifically designed for those who want to build code that's modular, verifiable and optimized for change.
 
 ![Data_Factory](https://github.com/abhishekshah25/3-layer-Medallion-Data-Pipeline/assets/147745895/c8c1d3a1-6874-4f99-b078-ecaac353490f)
 
