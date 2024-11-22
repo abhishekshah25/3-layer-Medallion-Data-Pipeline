@@ -19,11 +19,8 @@ dbutils.fs.mount(
 )
 
 dbutils.fs.ls('/mnt/bronze')
-
 dbutils.fs.ls('/mnt/silver')
-
 dbutils.fs.ls('/mnt/gold')
-
 
 fileName = dbutils.widgets.get('fileName')
 tableSchema = dbutils.widgets.get('table_schema')
