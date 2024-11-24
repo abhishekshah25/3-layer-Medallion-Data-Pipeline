@@ -1,5 +1,3 @@
-# Layers
-
 dbutils.fs.mount(
     source = 'wasbs://bronze@medalliondbtstorage.blob.core.windows.net',
     mount_point = '/mnt/bronze',
