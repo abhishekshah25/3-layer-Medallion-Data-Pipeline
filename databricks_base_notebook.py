@@ -1,4 +1,4 @@
-# Layers
+# 3 Layers
 
 dbutils.fs.mount(
     source = 'wasbs://bronze@medalliondbtstorage.blob.core.windows.net',
